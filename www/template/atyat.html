@@ -1,0 +1,51 @@
+<ion-view>
+
+
+  <div class="bar bar-header bar-positive">
+    <h1 class="title">عطیات</h1>
+    <button class="ion-ios-arrow-back back_button_font" ui-sref="mainPage"></button>
+  </div>
+  <ion-content class="background_color">
+    <div class="row">
+      <div class="col col-25">
+      </div>
+      <div class="col col-50, logo">
+        <img src="img/logo.png" style="height: 165px;">
+      </div>
+      <div class="col col-25">
+      </div>
+    </div>
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="Mobile Number" ng-model="signUpData.PhoneNumber">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Email" ng-model="signUpData.email">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="UserName" ng-model="signUpData.userName">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Password" ng-model="signUpData.password">
+      </label>
+      <div class="list">
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Gender
+          </div>
+          <select ng-model="gender">
+            <option selected>male</option>
+            <option >female</option>
+          </select>
+        </label>
+
+      </div>
+    </div>
+
+    <button class="button button-full button button-positive" ng-click="getUserCradential();">Create account</button>
+    </div>
+    </div>
+    </div>
+  </ion-content>
+</ion-view>

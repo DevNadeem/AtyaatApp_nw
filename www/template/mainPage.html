@@ -1,0 +1,24 @@
+<ion-view>
+  <ion-content class="background_color">
+    <div class="bar bar-header bar-positive">
+      <h1 class="title">MainPage</h1>
+      <button class="ion-navicon-round back_button_font" ng-click="sideMenu()"></button>
+    </div>
+    <div class="row">
+      <div class="col col-25">
+      </div>
+      <div class="col col-50, logo">
+        <img src="img/logo.png" style="height: 165px;">
+      </div>
+      <div class="col col-25"></div>
+    </div>
+    <div class="row">
+      <div class="col manpage-top">
+            <button class="button button-full" ng-repeat="field in fields" ng-click="fieldIndex($index);">{{field}}</button>
+    </div>
+    </div>
+    <div>
+      <button class="button button-full" ng-show="showbutton">farzan</button>
+    </div>
+      </ion-content>
+</ion-view>
