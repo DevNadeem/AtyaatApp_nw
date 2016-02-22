@@ -7487,14 +7487,14 @@ button,
 select,
 textarea {
   font-weight: normal;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857; }
 
 input,
 button,
 select,
 textarea {
-  font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif; }
+  font-family: "Jameel Noori Nastaleeq", "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif; }
 
 .item-input {
   display: -webkit-box;
@@ -7687,8 +7687,11 @@ input[type="color"] {
   height: 34px;
   color: #111;
   vertical-align: middle;
-  font-size: 14px;
-  line-height: 16px; }
+  font-size: 18px;
+  line-height: 20px;
+  font-family:'Jameel Noori Nastaleeq';
+  direction:rtl; 
+  }
 
 .platform-ios input[type="datetime-local"],
 .platform-ios input[type="date"],

@@ -5,7 +5,7 @@ atyaatAppModule.controller('mainPageController',function($scope , $ionicSideMenu
     $ionicSideMenuDelegate.toggleLeft();
   }
   $scope.fields=[
-    "عطیات","صدقات","زکوٰۃ","فدیہ","فطرہ","تعمیِر مسجد",
+    "عطیات","صدقات","زکوٰۃ","فدیہ","فطرہ","تعمیِر مسجد","Card",
    ];
   $scope.fieldIndex = function (index){
     $scope.showbutton = true;
@@ -32,6 +32,10 @@ atyaatAppModule.controller('mainPageController',function($scope , $ionicSideMenu
     }
     else if(index == 5){
       $state.go('taamer-e-masjid')
+
+    }
+    else if(index == 6){
+      $state.go('Card')
 
     }
   }

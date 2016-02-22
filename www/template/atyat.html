@@ -16,31 +16,56 @@
       </div>
     </div>
     <div class="list">
-      <label class="item item-input">
-        <input type="text" placeholder="Mobile Number" ng-model="signUpData.PhoneNumber">
+               <label class="item item-input">
+        <input type="text" placeholder="نام" ng-model="atyatData.Name">
       </label>
+      <div class="row">
+        <div class="col col-50">
       <label class="item item-input">
-        <input type="text" placeholder="Email" ng-model="signUpData.email">
+        <input type="text" placeholder="ای میل" ng-model="atyatData.email">
+      </label></div>
+        <div class="col col-50">
+        <label class="item item-input">
+        <input type="text" placeholder="فون" ng-model="atyatData.PhoneNumber">
+      </label></div></div>
+            <label class="item item-input">
+        <input type="text" placeholder="پتہ" ng-model="atyatData.Address">
       </label>
+      <div class="row">
+        <div class="col col-25">
+          <label class="item item-input">
+            <input type="text" placeholder="کرنسی" ng-model="atyatData.Curence">
+          </label></div>
+      <div class="col col-75">
       <label class="item item-input">
-        <input type="text" placeholder="UserName" ng-model="signUpData.userName">
-      </label>
-      <label class="item item-input">
-        <input type="text" placeholder="Password" ng-model="signUpData.password">
-      </label>
+        <input type="text" placeholder="کل رقم" ng-model="atyatData.Rupees">
+      </label></div></div>
       <div class="list">
-
         <label class="item item-input item-select">
           <div class="input-label">
-            Gender
+                  ادائیگی کی نوعیت
           </div>
-          <select ng-model="gender">
-            <option selected>male</option>
-            <option >female</option>
+          <select ng-model="Chack">
+            <option selected>کیش</option>
+            <option >چیک</option>
           </select>
         </label>
-
-      </div>
+                  <label class="item item-input">
+                    <input type="text" placeholder="چیک نمبر" ng-model="atyatData.Chack">
+                  </label>
+                  <label class="item item-input">
+                    <input type="text" placeholder="بنک " ng-model="atyatData.Bank">
+                  </label>
+                  <label class="item item-input item-select">
+                    <div class="input-label">
+                      مد
+                    </div>
+                    <select ng-model="Maad">
+                      <option selected>نفلی صدقہ</option>
+                      <option >عقیقہ</option>
+                    </select>
+                  </label>
+                       </div>
     </div>
 
     <button class="button button-full button button-positive" ng-click="getUserCradential();">Create account</button>

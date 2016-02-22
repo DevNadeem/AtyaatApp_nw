@@ -55,7 +55,7 @@ atyaatAppModule.config(function($stateProvider,$urlRouterProvider){
 
     .state('atyat',{
       url:'/atyat',
-      controller:'mainPageController',
+      controller:'atyatCtrl',
       templateUrl:'template/atyat.html'
     })
 
@@ -87,6 +87,12 @@ atyaatAppModule.config(function($stateProvider,$urlRouterProvider){
       url:'/taamer-e-masjid',
       controller:'mainPageController',
       templateUrl:'template/taamer-e-masjid.html'
+    })
+
+    .state('Card',{
+      url:'/card',
+      controller:'mainPageController',
+      templateUrl:'template/card.html'
     })
 
 });
